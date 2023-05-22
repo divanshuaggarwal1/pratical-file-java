@@ -1,0 +1,29 @@
+package practicallist;
+import java.util.*;
+      class room{
+       int roomno;
+       String roomtype;
+       float roomarea;
+       String acmachine;
+
+     
+    void setdata( int roomno, String roomtype,float roomarea,String acmachine){
+        this.roomno=roomno;
+        this.roomtype=roomtype;
+        this.roomarea=roomarea;
+        this.acmachine=acmachine;
+    }
+    void display(){
+        System.out.println(roomno+""+""+roomtype+""+roomarea+""+""+acmachine);
+    }
+}
+    public class set {
+        public static void main(String[] args) {
+            room r =new room();
+            r.setdata(1, "aa", 1.1f, "yes");
+            //r.setdata(1,"a",1.1,"yes");
+            r.display();
+        }
+
+    
+}
